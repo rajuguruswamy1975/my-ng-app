@@ -1,0 +1,9 @@
+<div class="mian-container">
+  <span>Main main-container</span>
+  <div> Data {{names}}</div>
+  <div class="">
+    Selected: {{name}}
+  </div>
+  <app-outer [namesx]="namesa" (eventFromOuter) ="eventFromOuter($event)"></app-outer>
+
+</div>
