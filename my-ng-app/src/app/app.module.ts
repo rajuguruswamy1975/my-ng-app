@@ -8,6 +8,8 @@ import { NameTagComponent } from './name-tag/name-tag.component';
 import { MainContainerComponent } from './main-container/main-container.component';
 import { OuterComponent } from './outer/outer.component';
 import { InnerComponent } from './inner/inner.component';
+import {HttpClientModule} from  '@angular/common/http';
+import {InterceptorModule} from './interceptor.module';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { InnerComponent } from './inner/inner.component';
     InnerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    InterceptorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
